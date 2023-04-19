@@ -4,47 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css flexbox-7</title>
-    <!-- command line for push the code on git hub -->
-    <!-- git add . this is starting line -->
-    <!-- git commit -m "css flexbox video completed" -->
-    <!-- git push -u origin main -->
+    <title>Css flexbox-8</title>
 <style>
     .container{
        background-color: #eee;
-       margin: 50px auto 0;
+       height: 150px;
+       margin: 50px;
        padding: 10px;
        border: 3px solid black;
-       height: 400px;
        display: flex;
-       align-items: center;
+       
+       
+       
     }
-    .items-1{background-color: red;
-             align-self:stretch ;
-             
-    }
-    .items-2{background-color: green;
-    align-self: center;
-    }
-    .items-3{background-color:  blue;
-    align-self: baseline;}
-    .items-4{background-color:  pink;
-    align-self: flex-end;}
+    .items-1{background-color: red; order: 1;}
+    .items-2{background-color: green; order: -2;}
+    .items-3{background-color:  blue; order: 2;}
+    .items-4{background-color:  rgb(190, 64, 85); 
+    order: -1;}
+    .items-5{background-color:  pink;}
+    
     .items{
-        color: #eee;
+        color: black;
         font-size: 20px;
         font-weight: bold;
+        margin: 10px;
     }
     
 </style>
 </head>
 <body>
-    <h1>Align - self</h1>
+    <h2>Css flexbox order</h2>
     <div class="container">
         <div class="items items-1">One</div>
         <div class="items items-2">Two</div>
         <div class="items items-3">Three</div>
         <div class="items items-4">Four</div>
+        <div class="items items-5">five</div>
+       
         
     </div>
 </body>
