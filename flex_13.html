@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css flexbox-13</title>
+<style>
+    .container{
+       background-color: #eee;
+       height: 400px;
+       margin: 50px;
+       padding: 0px;
+       border: 3px solid black;
+       display: flex;
+       flex-direction: column;
+    
+       
+       
+       
+    }
+    .items-1{background-color: red; 
+        
+    
+    }
+    .items-2{background-color: pink;
+    display: flex;
+    }
+    .items-2 > .subitem{
+      background-color: rgb(154, 232, 232);
+      color: bisque;
+      flex-grow: 1;
+      margin: 5px;
+    }
+    .items-3{background-color: green;
+     }
+    .items-4{background-color: blue;
+ }
+  
+    
+    .items{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px;
+        height: 100px;
+        width: 100%px;
+    
+    }
+    
+    
+</style>
+</head>
+<body>
+    <h2>Css flexbox nested </h2>
+    <div class="container">
+        <div class="items items-1">One</div>
+        <div class="items items-2">
+            <div class="subitem subitem-1">A</div>
+            <div class="subitem subitem-2">B</div>
+            <div class="subitem subitem-3">C</div>
+        </div>
+        <div class="items items-3">Three</div>
+        <div class="items items-4">four</div>
+        
+       
+        
+    </div>
+</body>
+</html>
