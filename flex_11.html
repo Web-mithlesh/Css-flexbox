@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css flexbox-11</title>
+<style>
+    .container{
+       background-color: #eee;
+       height: 150px;
+       margin: 50px;
+       padding: 0px;
+       border: 3px solid black;
+       display: flex;
+       width: 600px;
+       
+       
+       
+       
+    }
+    .items-1{background-color: red; 
+        width: 200px;
+        /* flex-shrink: 1; */
+        /* Shorthand property  */
+        flex: 0 0 1;
+     }
+    .items-2{background-color: green; }
+    .items-3{background-color:  blue; }
+    .items-4{background-color:  rgb(190, 64, 85); 
+    }
+    .items-5{background-color:  pink; }
+    
+    .items{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        height: 60px;
+
+    
+    
+    }
+    
+</style>
+</head>
+<body>
+    <h2>Css flexbox Shrink</h2>
+    <div class="container">
+        <div class="items items-1">One</div>
+        <div class="items items-2">Two</div>
+        <div class="items items-3">Three</div>
+        <div class="items items-4">Four</div>
+        <div class="items items-5">five</div>
+       
+        
+    </div>
+</body>
+</html>
+
